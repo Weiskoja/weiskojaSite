@@ -1,0 +1,63 @@
+/*body styling*/
+body{
+    background-color: #cfcfc4; /* http://pastel-gray.colorcode.is/ */
+}
+
+
+/*link css*/
+
+nav .active{
+    font-size: 64px;
+}
+a, a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* Nav styling*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter:blur(25px);
+}
+ nav{
+    color: white ;
+ }
+
+
+
+footer .perInfo:hover{
+    text-decoration: underline;
+}
+
+
+/*gallery css*/
+img{
+    max-height: 300px;
+}
+
+/* footer css*/
+footer{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 100px;
+}
+footer #oneF{
+    display: flex;
+    flex-flow: column;
+}
+footer #twoF{
+    display: flex;
+}
+#initials{
+    height: 100px;
+}
+
