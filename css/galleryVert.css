@@ -40,6 +40,10 @@ main{
     position: relative;
 
     background-color: white;
+    background-image: url("/images/football/scarletKnight.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
     height: 60%;
     width: 90%;

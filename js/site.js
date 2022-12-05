@@ -12,3 +12,22 @@ document.querySelector("#initials").addEventListener("click", function(){
         inverted = false;
     }
 })
+
+var currPic = "B10Celebration.jpeg";
+var pics = document.querySelectorAll(".galleryObj");
+var displayPic = document.querySelector("#displayPic");
+
+pics.forEach(
+    pic => {
+        pic.addEventListener("click", function(){
+            var imgPath = String(pic.src).split("\/");
+            var basePath = imgPath.slice(0,imgPath.length - 1).join("\/") + "\/";
+
+            console.log(imgPath[imgPath.length - 1]);
+            console.log(basePath)
+            
+
+        })
+    }
+)
+
