@@ -20,14 +20,10 @@ var displayPic = document.querySelector("#displayPic");
 pics.forEach(
     pic => {
         pic.addEventListener("click", function(){
-            var imgPath = String(pic.src).split("\/");
-            var basePath = imgPath.slice(0,imgPath.length - 1).join("\/") + "\/";
-
-            console.log(imgPath[imgPath.length - 1]);
-            console.log(basePath)
-            
-
+            displayPic.style.backgroundImage = "url(" + pic.src + ")"   
         })
     }
 )
 
+//gets background-image css value **FOR FUTURE USE**
+//console.log(window.getComputedStyle(displayPic).getPropertyValue("background-image"))
