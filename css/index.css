@@ -1,27 +1,117 @@
 
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto ;
+}
 
-@media screen and (min-width : 700px){
+#logo{
+     width: 50vh;
+}
+
+#grid1{
+    position: relative;
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-color: white;
+    color: black;
+
+    width: 100%;
+}
+
+#grid2{
+    grid-area: 2 / 1 / span 1 / span 1;
+    background-image: url("/images/logoBkg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+#grid3{
+    position: relative;
+    grid-area: 3 / 1 / span 1 / span 1;
+    background-color: black;
+}
+
+
+
+@media screen and (min-width : 600px){
+    
+}
+@media screen and (min-width : 800px){
     .gridContainer{
         display: grid;
         grid-template-columns: auto auto auto ;
         grid-template-rows: auto;
     }
-    
-    #grid1{
+    #logo{
+        display: flex ;
+        width: 50vh;
+    }
+
+
+    #cover1{
+        position: relative;
+
+        background-color: none;
         grid-area: 1 / 1 / span 1 / span 1;
         border-radius: 25px 0px 0px 25px;
-        background-color: blue;
+        
+        background-image: url("/images/football/Paul2022.jpeg");
+
+        background-size:cover;
+        background-position: center;
+
+    }
+
+    #grid1{
+        position: relative;
+        grid-area: 1 / 1 / span 1 / span 1;
+        background-image: url("/images/logoBkg.jpeg");
+        background-size:cover;
+        background-position: center;
+        background-color: transparent;
+        height: 100%;
+        
+    }
+    #grid1:hover, #grid1:focus, #cover1:focus{
+        background-image: none;
     }
     #grid2{
+        display: flex;
         grid-area: 1 / 2 / span 1 / span 1;
-        justify-items: center;
-        background-color: red;
+        height: max-content;
+        justify-content: center;
+        background-color: none;
+        background-image: url("/images/logoBkg.jpeg");
+        /* https://in.pinterest.com/pin/291959988340887908/ */
     }
+
     #grid3{
+        position: relative;
         grid-area: 1 / 3 / span 1 / span 1;
         border-radius: 0px 25px 25px 0px; 
-        background-color: green;
+        
+        background-image: url("/images/logoBkg.jpeg");
+        background-size: cover;
+        background-position: center;
+
+        background-color: transparent;
+
+        height: 100%;
     }
+   
+    #cover2{
+        position: relative;
+
+
+        grid-area: 1 / 3 / span 1 / span 1;
+        border-radius: 0px 25px 25px 0px;
+
+        background-image: url("/images/personal/Cleanup2021.jpg");
+        background-size:cover;
+        background-position: center;
+
+    }
+    #grid3:focus, #grid3:hover{
+        background-image: none;
+    }
+    
 }
-
-
